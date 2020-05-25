@@ -17,11 +17,6 @@ a {
 }
 
 .header {
-  background-image: url("assets/img/logo_long_yellow.jpg");
-  background-position: left;
-  background-position-x: 20px;
-  background-repeat: no-repeat;
-  background-size: 50%;
   margin: 15px;
   color: chocolate;
   border: dashed darkorange 1px;
@@ -30,6 +25,11 @@ a {
 
 .header-text {
     text-align: right;
+}
+
+.header-logo {
+  position: absolute;
+  width: 40%
 }
 
 .panel {
@@ -42,6 +42,15 @@ a {
 .main-picture {
   height: 30%;
   width: 40%;
+}
+
+.message {
+  margin: 15px;
+  color: white;
+  background-color: darkorange;
+  border: dashed darkorange 1px;
+  padding: 15px;
+  text-align: center;
 }
 
 
