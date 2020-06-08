@@ -4,23 +4,31 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { MessageComponent } from './message/message.component';
+import { MenuComponent } from './menu/menu.component';
+import {MatIconModule} from "@angular/material/icon";
+import {GlobalsService} from "./globals.service";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainComponent,
-    MessageComponent
+    MessageComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [GlobalsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
