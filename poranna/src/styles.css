@@ -45,6 +45,15 @@ a {
   padding: 15px;
   text-align: center;
 }
+
+.panel-left-aligned {
+  margin: 15px;
+  color: chocolate;
+  border: dashed darkorange 1px;
+  padding: 15px;
+  text-align: left;
+}
+
 .main-picture {
   height: 30%;
   width: 40%;
@@ -54,7 +63,7 @@ a {
 .message {
   margin: 15px;
   color: white;
-  background-color: darkorange;
+  background-color: red;
   border: dashed darkorange 1px;
   padding: 15px;
   text-align: center;
@@ -73,6 +82,13 @@ a {
 }
 
 .mat-button:hover {
+  background-color: darkorange;
+  color: white;
+  margin-right: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.mat-button-selected {
   background-color: darkorange;
   color: white;
   margin-right: 10px !important;

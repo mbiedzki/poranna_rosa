@@ -1,4 +1,9 @@
 <app-header></app-header>
-<!--<app-message></app-message>-->
+<app-message></app-message>
 <app-menu></app-menu>
 <app-main *ngIf="myGlobals.currentPage === 0"></app-main>
+<app-gallery *ngIf="myGlobals.currentPage === 1" [currentPage]="myGlobals.currentPage"></app-gallery>
+<app-gallery *ngIf="myGlobals.currentPage === 2" [currentPage]="myGlobals.currentPage"></app-gallery>
+<app-gallery *ngIf="myGlobals.currentPage === 3" [currentPage]="myGlobals.currentPage"></app-gallery>
+<app-gallery *ngIf="myGlobals.currentPage === 4" [currentPage]="myGlobals.currentPage"></app-gallery>
+<app-gallery *ngIf="myGlobals.currentPage === 5" [currentPage]="myGlobals.currentPage"></app-gallery>
