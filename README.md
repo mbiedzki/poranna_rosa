@@ -1,2 +1,2 @@
 # poranna_rosa
-Poranna Rosa
+PorannaRosa.pl is commercial flower shop site.
