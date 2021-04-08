@@ -25,8 +25,6 @@ export class GalleryComponent implements OnInit {
     }
   }
 
-  onPageChange(): void {}
-
   tiles: Array<string> = [];
   numberOfImages: Array<number> = [22, 14, 11, 18, 18];
 }
