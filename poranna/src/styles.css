@@ -81,6 +81,12 @@ a {
   margin-bottom: 10px !important;
 }
 
+.button-large {
+  font-size: large;
+  font-weight: bold;
+  width: max-content;
+}
+
 .mat-button:hover {
   background-color: darkorange;
   color: white;

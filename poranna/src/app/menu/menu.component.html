@@ -1,8 +1,14 @@
 <div class="menu-container">
-<button mat-button mat-raised-button (click)="selectPage(0)" [class.mat-button-selected]="myGlobals.currentPage === 0">O nas</button>
-<button mat-button mat-raised-button (click)="selectPage(1)" [class.mat-button-selected]="myGlobals.currentPage === 1">Bukiety</button>
-<button mat-button mat-raised-button (click)="selectPage(2)" [class.mat-button-selected]="myGlobals.currentPage === 2">Bukiety ślubne</button>
-<button mat-button mat-raised-button (click)="selectPage(3)" [class.mat-button-selected]="myGlobals.currentPage === 3">Dekoracje</button>
-<button mat-button mat-raised-button (click)="selectPage(4)" [class.mat-button-selected]="myGlobals.currentPage === 4">Wiązanki pogrzebowe</button>
-<button mat-button mat-raised-button (click)="selectPage(5)" [class.mat-button-selected]="myGlobals.currentPage === 5">Stroiki</button>
+    <button mat-button mat-raised-button class="button-large" (click)="selectPage(0)"
+        [class.mat-button-selected]="myGlobals.currentPage === 0">O nas</button>
+    <button mat-button mat-raised-button class="button-large" (click)="selectPage(1)"
+        [class.mat-button-selected]="myGlobals.currentPage === 1">Bukiety</button>
+    <button mat-button mat-raised-button class="button-large" (click)="selectPage(2)"
+        [class.mat-button-selected]="myGlobals.currentPage === 2">Bukiety ślubne</button>
+    <button mat-button mat-raised-button class="button-large" (click)="selectPage(3)"
+        [class.mat-button-selected]="myGlobals.currentPage === 3">Dekoracje</button>
+    <button mat-button mat-raised-button class="button-large" (click)="selectPage(4)"
+        [class.mat-button-selected]="myGlobals.currentPage === 4">Wiązanki pogrzebowe</button>
+    <button mat-button mat-raised-button class="button-large" (click)="selectPage(5)"
+        [class.mat-button-selected]="myGlobals.currentPage === 5">Stroiki</button>
 </div>

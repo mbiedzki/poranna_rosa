@@ -20,9 +20,11 @@
   </div>
   <br />
   <div class="header-text">
-    <mat-icon>mail_outline</mat-icon>
-    <a href="mailto:biuro@porannarosa.com.pl ">biuro@porannarosa.com.pl</a> ,
-    <mat-icon>public</mat-icon>
-    <a href="https://goo.gl/maps/LcYZAdwVFmUwUu347">zobacz na mapie</a>
+    <a mat-button mat-raised-button href="mailto:biuro@porannarosa.com.pl ">
+      <mat-icon>mail_outline</mat-icon>biuro@porannarosa.com.pl
+    </a>
+    <button mat-button mat-raised-button (click)="openMap()">
+      <mat-icon>public</mat-icon>zobacz na mapie
+    </button>
   </div>
 </div>
