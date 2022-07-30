@@ -9,8 +9,10 @@ import { GlobalsService } from '../globals.service';
 export class MessageComponent implements OnInit {
   constructor(public myGlobals: GlobalsService) {}
 
-  messageHidden: boolean;
+  from: string;
+  to: string;
   message: string = '';
+  showMessage = false;
 
   ngOnInit(): void {
     fetch('assets/message.json')
@@ -18,7 +20,22 @@ export class MessageComponent implements OnInit {
       .then((data) => {
         const mess = JSON.parse(data);
         this.message = mess.message;
-        this.messageHidden = mess.hidden;
+        this.from = mess.from;
+        this.to = mess.to;
+        this.showMessage = this.checkDates()
       });
+  }
+
+  checkDates() {
+      const todayObj = new Date();
+      const dd = String(todayObj.getDate()).padStart(2, '0');
+      const mm = String(todayObj.getMonth() + 1).padStart(2, '0');
+      const yyyy = todayObj.getFullYear();
+
+      const todayStr = yyyy + '.' + mm + '.' + dd;
+      const today = new Date(todayStr)
+      const from = new Date(this.from);
+      const to = new Date(this.to);
+      return today >= from && today <= to
   }
 }
