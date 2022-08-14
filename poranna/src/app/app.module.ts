@@ -10,7 +10,7 @@ import { MainComponent } from './main/main.component';
 import { MessageComponent } from './message/message.component';
 import { MenuComponent } from './menu/menu.component';
 import { MatIconModule } from '@angular/material/icon';
-import { GlobalsService } from './globals.service';
+import { GlobalsService } from './services/globals.service';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';

@@ -1,0 +1,12 @@
+.message {
+    margin: 15px;
+    color: white;
+    background-color: #FF8C00;
+    border: dashed #FF8C00 1px;
+    padding: 15px;
+    text-align: center;
+}
+
+.hidden-message {
+    display: none;
+}

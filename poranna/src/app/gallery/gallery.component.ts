@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MobileModeService } from '../services/mobileMode.service';
-import { LABELS } from '../globals.service';
+import { LABELS } from '../services/globals.service';
 
 @Component({
     selector: 'app-gallery',

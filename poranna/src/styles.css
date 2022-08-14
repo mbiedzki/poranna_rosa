@@ -7,102 +7,32 @@ html, body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: lightyellow;
+    background-color: #FFFFE0;
 }
 
 a {
-    color: chocolate;
+    color: #D2691E;
 }
 
 .text-bold {
     font-weight: bold;
-    color: darkorange;
-}
-
-.header {
-    margin: 15px;
-    color: chocolate;
-    border: dashed darkorange 1px;
-    padding: 15px;
-    background-color: lightyellow;
-}
-
-.mobile-header {
-    margin: 15px;
-    color: chocolate;
-    border: dashed darkorange 1px;
-    padding: 15px;
-    background-color: lightyellow;
-    max-width: 95%;
-    min-height: 15%;
-}
-
-.header-text {
-    text-align: right;
-}
-
-.header-mobile-text {
-    text-align: center;
-}
-
-.header-logo {
-    position: relative;
-    margin: auto;
-    width: 70%
-}
-
-.header-mobile-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    max-height: 80%;
-}
-
-.menu-container {
-    color: white;
-    text-align: center;
+    color: #FF8C00;
 }
 
 .panel {
     margin: 15px;
-    color: chocolate;
-    border: dashed darkorange 1px;
+    color: #D2691E;
+    border: dashed #FF8C00 1px;
     padding: 15px;
     text-align: center;
 }
 
 .panel-left-aligned {
     margin: 15px;
-    color: chocolate;
-    border: dashed darkorange 1px;
+    color: #D2691E;
+    border: dashed #FF8C00 1px;
     padding: 15px;
     text-align: left;
-}
-
-.main-picture {
-    height: 30%;
-    width: 40%;
-    margin-right: 5px;
-}
-
-.main-mobile-picture {
-    height: 30%;
-    width: 80%;
-    margin-right: 5px;
-}
-
-.message {
-    margin: 15px;
-    color: white;
-    background-color: darkorange;
-    border: dashed darkorange 1px;
-    padding: 15px;
-    text-align: center;
-}
-
-.hidden-message {
-    display: none;
 }
 
 .mat-icon {
@@ -111,15 +41,10 @@ a {
 }
 
 .mat-button {
-    background-color: lightyellow;
-    color: chocolate;
+    background-color: #FFFFE0;
+    color: #D2691E;
     margin-right: 10px !important;
     margin-bottom: 10px !important;
-}
-
-.mat-mobile-menu {
-    background-color: lightyellow;
-    color: chocolate;
 }
 
 .button-large {
@@ -128,20 +53,15 @@ a {
     width: max-content;
 }
 
-.text-large {
-    font-size: large;
-    font-weight: bold;
-}
-
 .mat-button:hover {
-    background-color: darkorange;
+    background-color: #FF8C00;
     color: white;
     margin-right: 10px !important;
     margin-bottom: 10px !important;
 }
 
 .mat-button-selected {
-    background-color: darkorange;
+    background-color: #FF8C00;
     color: white;
     margin-right: 10px !important;
     margin-bottom: 10px !important;

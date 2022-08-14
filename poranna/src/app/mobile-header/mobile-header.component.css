@@ -1,0 +1,22 @@
+.header-mobile-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-height: 80%;
+}
+
+.mobile-header {
+    margin: 15px;
+    color: #D2691E;
+    border: dashed #FF8C00 1px;
+    padding: 15px;
+    background-color: #FFFFE0;
+    max-width: 95%;
+    min-height: 15%;
+}
+
+.mat-mobile-menu {
+    background-color: #FFFFE0;
+    color: #D2691E;
+}

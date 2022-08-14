@@ -1,0 +1,17 @@
+.header {
+    margin: 15px;
+    color: #D2691E;
+    border: dashed #FF8C00 1px;
+    padding: 15px;
+    background-color: #FFFFE0;
+}
+
+.header-text {
+    text-align: right;
+}
+
+.header-logo {
+    position: relative;
+    margin: auto;
+    width: 70%
+}

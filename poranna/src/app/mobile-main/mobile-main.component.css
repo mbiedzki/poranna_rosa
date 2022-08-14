@@ -1,0 +1,17 @@
+.main-mobile-text {
+    text-align: center;
+}
+
+.main-mobile-picture {
+    height: 30%;
+    width: 80%;
+    margin-right: 5px;
+}
+
+.header {
+    margin: 15px;
+    color: #D2691E;
+    border: dashed #FF8C00 1px;
+    padding: 15px;
+    background-color: #FFFFE0;
+}

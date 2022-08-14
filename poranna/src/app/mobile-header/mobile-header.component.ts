@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalsService } from '../globals.service';
+import { GlobalsService } from '../services/globals.service';
 
 @Component({
     selector: 'app-mobile-header',
