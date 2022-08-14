@@ -1,7 +1,16 @@
-<app-header></app-header>
-<app-message></app-message>
-<app-menu></app-menu>
-<app-main *ngIf="myGlobals.currentPage === 0"></app-main>
+<ng-container *ngIf="!mobileMode">
+    <app-header></app-header>
+    <app-message></app-message>
+    <app-menu></app-menu>
+</ng-container>
+
+<ng-container *ngIf="mobileMode">
+    <app-mobile-header></app-mobile-header>
+    <app-message></app-message>
+</ng-container>
+
+<app-main *ngIf="!mobileMode && myGlobals.currentPage === 0"></app-main>
+<app-mobile-main *ngIf="mobileMode && myGlobals.currentPage === 0"></app-mobile-main>
 <app-gallery *ngIf="myGlobals.currentPage === 1" [currentPage]="myGlobals.currentPage"></app-gallery>
 <app-gallery *ngIf="myGlobals.currentPage === 2" [currentPage]="myGlobals.currentPage"></app-gallery>
 <app-gallery *ngIf="myGlobals.currentPage === 3" [currentPage]="myGlobals.currentPage"></app-gallery>

@@ -30,10 +30,21 @@ a {
     text-align: right;
 }
 
+.header-mobile-text {
+    text-align: center;
+}
+
 .header-logo {
     position: relative;
     margin: auto;
     width: 70%
+}
+
+.header-mobile-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 .menu-container {
@@ -60,6 +71,12 @@ a {
 .main-picture {
     height: 30%;
     width: 40%;
+    margin-right: 5px;
+}
+
+.main-mobile-picture {
+    height: 30%;
+    width: 80%;
     margin-right: 5px;
 }
 

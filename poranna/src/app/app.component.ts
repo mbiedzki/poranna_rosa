@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalsService } from './globals.service';
+import { Subscription } from 'rxjs';
+import { MobileModeService } from './services/mobileMode.service';
 
 @Component({
     selector: 'app-root',
@@ -8,8 +10,19 @@ import { GlobalsService } from './globals.service';
 })
 export class AppComponent implements OnInit {
     title = 'poranna';
+    mobileMode = false;
+    mobileModeSubs = new Subscription();
 
-    constructor(public myGlobals: GlobalsService) {}
+    constructor(public myGlobals: GlobalsService, private mobileModeService: MobileModeService) {}
 
-    ngOnInit(): void {}
+    async ngOnInit(): Promise<void> {
+        await this.initMobileModeHandlers();
+    }
+
+    async initMobileModeHandlers() {
+        this.mobileModeSubs = this.mobileModeService.mobileMode.subscribe((mobileMode => {
+            this.mobileMode = mobileMode;
+        }));
+        await this.mobileModeService.setMobileModeHandlers();
+    }
 }

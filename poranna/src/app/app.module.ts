@@ -14,6 +14,8 @@ import { GlobalsService } from './globals.service';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
+import { MobileMainComponent } from './mobile-main/mobile-main.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MessageComponent,
     MenuComponent,
     GalleryComponent,
+    MobileHeaderComponent,
+    MobileMainComponent,
   ],
   imports: [
     BrowserModule,
