@@ -1,16 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { STORY } from '../services/globals.service';
 
 @Component({
     selector: 'app-mobile-main',
     templateUrl: './mobile-main.component.html',
     styleUrls: ['./mobile-main.component.css'],
 })
-export class MobileMainComponent implements OnInit {
-
-    constructor() { }
-
-    ngOnInit(): void {
-    }
+export class MobileMainComponent {
+    story: string = STORY;
 
     openMap(): void {
         console.log('mapa');

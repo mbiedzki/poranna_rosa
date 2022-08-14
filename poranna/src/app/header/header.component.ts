@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent implements OnInit {
-  constructor() {}
+export class HeaderComponent {
+    constructor() {}
 
-  ngOnInit(): void {}
-
-  openMap(): void {
-    console.log('mapa');
-    window.open('https://goo.gl/maps/LcYZAdwVFmUwUu347');
-  }
+    openMap(): void {
+        window.open('https://goo.gl/maps/LcYZAdwVFmUwUu347');
+    }
 }

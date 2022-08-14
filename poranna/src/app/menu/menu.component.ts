@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { GlobalsService } from '../services/globals.service';
 
 @Component({
@@ -6,12 +6,10 @@ import { GlobalsService } from '../services/globals.service';
     templateUrl: './menu.component.html',
     styleUrls: ['./menu.component.css'],
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
     constructor(public myGlobals: GlobalsService) {}
 
     public selectPage(index) {
         this.myGlobals.currentPage = index;
     }
-
-    ngOnInit(): void {}
 }
