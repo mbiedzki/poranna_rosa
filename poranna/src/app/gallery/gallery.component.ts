@@ -1,30 +1,40 @@
-import { Input } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
-import { GlobalsService } from '../globals.service';
-import { MenuComponent } from '../menu/menu.component';
+import { Component, Input, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { MobileModeService } from '../services/mobileMode.service';
+import { LABELS } from '../globals.service';
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css'],
+    selector: 'app-gallery',
+    templateUrl: './gallery.component.html',
+    styleUrls: ['./gallery.component.css'],
 })
 export class GalleryComponent implements OnInit {
-  constructor(
-    public myGlobals: GlobalsService,
-    public menuComponent: MenuComponent
-  ) {}
+    mobileMode = false;
+    mobileModeSubs = new Subscription();
+    cols: number;
+    title: string;
 
-  @Input() currentPage: number;
+    constructor(
+        private mobileModeService: MobileModeService,
+    ) {}
 
-  ngOnInit(): void {
-    let i: number;
-    let max: number = this.numberOfImages[this.currentPage - 1];
-    for (i = 1; i <= max; i++) {
-      this.tiles[i - 1] =
-        'assets/img/gallery' + this.currentPage + '/img' + i + '.jpg';
+    @Input() currentPage: number;
+
+    ngOnInit(): void {
+        this.mobileModeSubs = this.mobileModeService.mobileMode.subscribe((mobileMode => {
+            this.mobileMode = mobileMode;
+            this.cols = this.mobileMode ? 1 : 3;
+        }));
+        let i: number;
+        let max: number = this.numberOfImages[this.currentPage - 1];
+        for (i = 1; i <= max; i++) {
+            this.tiles[i - 1] =
+                'assets/img/gallery' + this.currentPage + '/img' + i + '.jpg';
+        }
+        console.log('ABC', this.currentPage, LABELS);
+        this.title = LABELS[this.currentPage];
     }
-  }
 
-  tiles: Array<string> = [];
-  numberOfImages: Array<number> = [22, 14, 11, 18, 18];
+    tiles: Array<string> = [];
+    numberOfImages: Array<number> = [22, 14, 11, 18, 18];
 }

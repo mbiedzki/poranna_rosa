@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalsService } from '../globals.service';
 
 @Component({
     selector: 'app-mobile-header',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MobileHeaderComponent implements OnInit {
 
-    constructor() { }
+    constructor(public myGlobals: GlobalsService) { }
 
     ngOnInit(): void {
+    }
+
+    public selectPage(index) {
+        this.myGlobals.currentPage = index;
     }
 
 }

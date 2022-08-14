@@ -24,6 +24,17 @@ a {
     color: chocolate;
     border: dashed darkorange 1px;
     padding: 15px;
+    background-color: lightyellow;
+}
+
+.mobile-header {
+    margin: 15px;
+    color: chocolate;
+    border: dashed darkorange 1px;
+    padding: 15px;
+    background-color: lightyellow;
+    max-width: 95%;
+    min-height: 15%;
 }
 
 .header-text {
@@ -44,7 +55,8 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: auto;
+    max-height: 80%;
 }
 
 .menu-container {
@@ -105,10 +117,20 @@ a {
     margin-bottom: 10px !important;
 }
 
+.mat-mobile-menu {
+    background-color: lightyellow;
+    color: chocolate;
+}
+
 .button-large {
     font-size: large;
     font-weight: bold;
     width: max-content;
+}
+
+.text-large {
+    font-size: large;
+    font-weight: bold;
 }
 
 .mat-button:hover {

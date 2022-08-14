@@ -16,28 +16,32 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 import { MobileMainComponent } from './mobile-main/mobile-main.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    MainComponent,
-    MessageComponent,
-    MenuComponent,
-    GalleryComponent,
-    MobileHeaderComponent,
-    MobileMainComponent,
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatCardModule,
-    MatGridListModule,
-  ],
-  providers: [GlobalsService, MenuComponent],
-  bootstrap: [AppComponent],
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        MainComponent,
+        MessageComponent,
+        MenuComponent,
+        GalleryComponent,
+        MobileHeaderComponent,
+        MobileMainComponent,
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatIconModule,
+        MatCardModule,
+        MatGridListModule,
+        MatMenuModule,
+        MatListModule,
+    ],
+    providers: [GlobalsService, MenuComponent],
+    bootstrap: [AppComponent],
 })
 export class AppModule {}
