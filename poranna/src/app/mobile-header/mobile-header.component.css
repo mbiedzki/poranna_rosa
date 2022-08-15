@@ -1,9 +1,8 @@
-.header-mobile-logo {
-    display: block;
+.mobile-logo {
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .mobile-header {
@@ -12,11 +11,16 @@
     border: dashed #FF8C00 1px;
     padding: 15px;
     background-color: #FFFFE0;
-    max-width: 95%;
-    min-height: 15%;
 }
 
-.mat-mobile-menu {
-    background-color: #FFFFE0;
-    color: #D2691E;
+.mobile-button-large {
+    font-size: x-large;
+    font-weight: bold;
+    width: max-content;
+}
+
+.mat-icon {
+    height: 48px !important;
+    width: 48px !important;
+    font-size: 48px !important;
 }

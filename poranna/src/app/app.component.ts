@@ -16,13 +16,9 @@ export class AppComponent implements OnInit {
     constructor(public myGlobals: GlobalsService, private mobileModeService: MobileModeService) {}
 
     async ngOnInit(): Promise<void> {
-        await this.initMobileModeHandlers();
-    }
-
-    async initMobileModeHandlers() {
+        await this.mobileModeService.setMobileModeHandlers();
         this.mobileModeSubs = this.mobileModeService.mobileMode.subscribe((mobileMode => {
             this.mobileMode = mobileMode;
         }));
-        await this.mobileModeService.setMobileModeHandlers();
     }
 }

@@ -18,6 +18,7 @@ import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 import { MobileMainComponent } from './mobile-main/mobile-main.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
+import { FlexModule } from '@angular/flex-layout';
 
 @NgModule({
     declarations: [
@@ -40,6 +41,7 @@ import { MatListModule } from '@angular/material/list';
         MatGridListModule,
         MatMenuModule,
         MatListModule,
+        FlexModule,
     ],
     providers: [GlobalsService, MenuComponent],
     bootstrap: [AppComponent],

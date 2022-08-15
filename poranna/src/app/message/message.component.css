@@ -5,6 +5,7 @@
     border: dashed #FF8C00 1px;
     padding: 15px;
     text-align: center;
+    font-size: large;
 }
 
 .hidden-message {

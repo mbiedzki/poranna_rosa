@@ -1,22 +1,32 @@
-<mat-toolbar class="mobile-header">
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu" class="mat-mobile-menu">
-        <button mat-menu-item aria-label="Menu" class="mat-mobile-menu button-large" (click)="selectPage(0)">O nas
+<div fxLayout="row" class="mobile-header">
+    <div fxFlex="10">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+            <mat-icon>menu</mat-icon>
         </button>
-        <button mat-menu-item aria-label="Menu" class="mat-mobile-menu button-large" (click)="selectPage(1)">Bukiety
-        </button>
-        <button mat-menu-item aria-label="Menu" class="mat-mobile-menu button-large" (click)="selectPage(2)">Bukiety
-            ślubne
-        </button>
-        <button mat-menu-item aria-label="Menu" class="mat-mobile-menu button-large" (click)="selectPage(3)">Dekoracje
-        </button>
-        <button mat-menu-item aria-label="Menu" class="mat-mobile-menu button-large" (click)="selectPage(4)">Wiązanki
-            pogrzebowe
-        </button>
-        <button mat-menu-item aria-label="Menu" class="mat-mobile-menu button-large" (click)="selectPage(5)">Stroiki
-        </button>
-    </mat-menu>
-    <img class="header-mobile-logo" src="assets/img/logo_long_yellow.jpg" alt="logo">
-</mat-toolbar>
+        <mat-menu #menu="matMenu" class="mobile-menu">
+            <button mat-menu-item aria-label="Menu" class="mobile-menu mobile-button-large" (click)="selectPage(0)">O
+                nas
+            </button>
+            <button mat-menu-item aria-label="Menu" class="mobile-menu mobile-button-large" (click)="selectPage(1)">
+                Bukiety
+            </button>
+            <button mat-menu-item aria-label="Menu" class="mobile-menu mobile-button-large" (click)="selectPage(2)">
+                Bukiety
+                ślubne
+            </button>
+            <button mat-menu-item aria-label="Menu" class="mobile-menu mobile-button-large" (click)="selectPage(3)">
+                Dekoracje
+            </button>
+            <button mat-menu-item aria-label="Menu" class="mobile-menu mobile-button-large" (click)="selectPage(4)">
+                Wiązanki
+                pogrzebowe
+            </button>
+            <button mat-menu-item aria-label="Menu" class="mobile-menu mobile-button-large" (click)="selectPage(5)">
+                Stroiki
+            </button>
+        </mat-menu>
+    </div>
+    <div fxFlex="90">
+        <img class="mobile-logo" src="assets/img/logo_long_yellow.jpg" alt="logo">
+    </div>
+</div>
