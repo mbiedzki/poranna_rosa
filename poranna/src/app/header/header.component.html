@@ -1,13 +1,6 @@
 <div class="header">
     <img class="header-logo" src="assets/img/logo_long_yellow.jpg" alt="logo">
     <div class="header-text">
-        <mat-icon>schedule</mat-icon>
-        Pon - Pt 8:00 - 20:00
-    </div>
-    <div class="header-text">Sob 10:00 - 18:00</div>
-    <div class="header-text">Nie 10:00 - 16:00</div>
-    <br/>
-    <div class="header-text">
         <mat-icon>home</mat-icon>
         Jana Nowaka-Jeziorańskiego 48,
     </div>
@@ -20,6 +13,10 @@
     </div>
     <br/>
     <div class="header-text">
+        <button mat-button mat-raised-button (click)="openMap()">
+            <mat-icon>schedule</mat-icon>
+            aktualne godziny pracy
+        </button>
         <a mat-button mat-raised-button href="mailto:biuro@porannarosa.com.pl ">
             <mat-icon>mail_outline</mat-icon>
             biuro@porannarosa.com.pl

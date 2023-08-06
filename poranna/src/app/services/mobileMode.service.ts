@@ -15,7 +15,6 @@ export class MobileModeService implements OnDestroy {
     ) { }
 
     public async updateMobileMode(mobileMode: boolean) {
-        console.log('ABC mobile', mobileMode);
         this.mobileModeData.next(mobileMode);
     }
 

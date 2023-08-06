@@ -1,18 +1,30 @@
 .main-mobile-text {
-    text-align: center;
+    text-align: justify;
     font-size: large;
+    color: #D2691E;
+    margin: 15px;
+}
+
+.main-mobile-header {
+    font-size: large;
+    color: #D2691E;
+    padding: 15px;
+    margin: 15px 15px 5px;
 }
 
 .main-mobile-picture {
-    height: 30%;
-    width: 80%;
-    margin-right: 5px;
+    width: 100%;
+    margin: auto;
 }
 
 .header {
-    margin: 15px;
+    margin-bottom: 5px;
+    border-bottom: dashed #FF8C00 1px;
     color: #D2691E;
-    border: dashed #FF8C00 1px;
-    padding: 15px;
+    padding: 0;
     background-color: #FFFFE0;
+}
+
+.mobile-panel {
+    margin: 5px;
 }

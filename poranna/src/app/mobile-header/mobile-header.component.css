@@ -1,26 +1,24 @@
 .mobile-logo {
     margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    max-height: 100%;
+    margin-right: 0;
+    max-width: 80vw;
 }
 
 .mobile-header {
-    margin: 15px;
+    margin-bottom: 5px;
     color: #D2691E;
-    border: dashed #FF8C00 1px;
-    padding: 15px;
+    padding: 0;
     background-color: #FFFFE0;
+    border-bottom: dashed #FF8C00 1px;
 }
 
 .mobile-button-large {
     font-size: x-large;
     font-weight: bold;
-    width: max-content;
+    margin: 5px;
 }
 
-.mat-icon {
-    height: 48px !important;
-    width: 48px !important;
-    font-size: 48px !important;
+.mat-icon-button {
+    transform: scale(2);
+    margin: 15px;
 }

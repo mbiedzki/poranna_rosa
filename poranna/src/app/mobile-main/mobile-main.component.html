@@ -1,4 +1,4 @@
-<div class="header main-mobile-text">
+<div class="header main-mobile-header">
     <div>
         <mat-icon>schedule</mat-icon>
         Pon - Pt 8:00 - 20:00
@@ -19,6 +19,10 @@
     </div>
     <br/>
     <div>
+        <button mat-button mat-raised-button (click)="openMap()">
+            <mat-icon>schedule</mat-icon>
+            aktualne godziny pracy
+        </button>
         <a mat-button mat-raised-button href="mailto:biuro@porannarosa.com.pl ">
             <mat-icon>mail_outline</mat-icon>
             biuro@porannarosa.com.pl
@@ -30,10 +34,10 @@
     </div>
 </div>
 <app-message></app-message>
-<div class="panel panel-left-aligned main-mobile-text">
+<div class="main-mobile-text">
     {{story}}
 </div>
-<div class="panel">
+<div class="mobile-panel">
     <img class="main-mobile-picture" src="assets/img/mainpic1.jpg" alt="Main1">
     <img class="main-mobile-picture" src="assets/img/mainpic2.jpg" alt="Main2">
     <img class="main-mobile-picture" src="assets/img/mainpic3.jpg" alt="Main3">

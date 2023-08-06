@@ -25,7 +25,7 @@ export class GalleryComponent implements OnInit, OnDestroy {
     ngOnInit(): void {
         this.mobileModeSubs = this.mobileModeService.mobileMode.subscribe((mobileMode => {
             this.mobileMode = mobileMode;
-            this.cols = this.mobileMode ? 2 : 3;
+            this.cols = this.mobileMode ? 1 : 3;
         }));
         const max = this.numberOfImages[this.currentPage - 1];
         for (let i = 1; i <= max; i++) {
